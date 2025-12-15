@@ -1,4 +1,4 @@
-from io import print
+from io import *
 
 function FunctionButton1(r,e)
     if e.type==0
@@ -82,11 +82,8 @@ function FunctionButton2(r,e)
     return
 end
 
-
 function main()
-
     dom::listen("button1",FunctionButton1)
     dom::listen("button2",FunctionButton2)
-
     return
 end
